@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SalesWebMvc.Models;
 
 namespace SalesWebMvc.Controllers
 {
@@ -6,7 +7,11 @@ namespace SalesWebMvc.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            List<Department> list = new List<Department>();
+            list.Add(new Department { Id = 1, Name = "Electronics" });
+            list.Add(new Department { Id = 1, Name = "Fashion" });
+            list.Add(new Department { Id = 1, Name = "Markting" });
+            return View(list);
         }
     }
 }
