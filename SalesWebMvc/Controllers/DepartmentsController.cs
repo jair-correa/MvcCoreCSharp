@@ -11,6 +11,7 @@ namespace SalesWebMvc.Controllers
             list.Add(new Department { Id = 1, Name = "Electronics" });
             list.Add(new Department { Id = 1, Name = "Fashion" });
             list.Add(new Department { Id = 1, Name = "Markting" });
+
             return View(list);
         }
     }
